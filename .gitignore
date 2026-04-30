@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# build
+dist
+.next
+coverage
+
+# OS
+.DS_Store
+Thumbs.db
+
+# prisma
+*.db
+*.db-journal
