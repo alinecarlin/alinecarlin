@@ -1,0 +1,23 @@
+{
+  "name": "@alinecarlin/assets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "*.svg",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.webp"
+  ],
+  "exports": {
+    "./logo.svg": "./logo.svg",
+    "./aline-avatar-dark.png": "./aline-avatar-dark.png",
+    "./aline-avatar-dark.jpg": "./aline-avatar-dark.jpg",
+    "./aline-avatar-dark.webp": "./aline-avatar-dark.webp",
+    "./aline-avatar-light.png": "./aline-avatar-light.png",
+    "./aline-avatar-light.jpg": "./aline-avatar-light.jpg",
+    "./aline-avatar-light.webp": "./aline-avatar-light.webp"
+  }
+}
