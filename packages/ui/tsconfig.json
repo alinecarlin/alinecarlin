@@ -1,0 +1,10 @@
+{
+  "extends": "@alinecarlin/config/typescript/react-library",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

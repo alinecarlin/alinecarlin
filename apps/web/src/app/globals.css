@@ -4,10 +4,11 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@source "../../../../packages/ui/src/";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
+@theme inline {
   --font-sans: "Inter", system-ui, sans-serif;
   --font-serif: "Fraunces", Georgia, serif;
   --font-script: "Dancing Script", cursive;
@@ -54,16 +55,14 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
 
   --breakpoint-2xl: 1400px;
 
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-float: float 6s ease-in-out infinite;
 }
-
-/* Aline Carlin — Premium personal brand design system.
-   All colors MUST be HSL.
-*/
 
 @layer base {
   :root {
@@ -145,7 +144,7 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border outline-ring/50;
   }
 
   html {

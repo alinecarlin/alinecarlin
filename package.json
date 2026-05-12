@@ -3,11 +3,31 @@
   "private": true,
   "packageManager": "pnpm@10.33.0",
   "scripts": {
+    "ui:add": "pnpm dlx shadcn@latest add",
+
     "dev:web": "pnpm --dir apps/web dev",
+
     "build:web": "pnpm --dir apps/web build",
+
     "start:web": "pnpm --dir apps/web start",
+
+    "lint:ui": "pnpm --dir packages/ui lint",
     "lint:web": "pnpm --dir apps/web lint",
+    "lint:check:ui": "pnpm --dir packages/ui lint:check",
     "lint:check:web": "pnpm --dir apps/web lint:check",
+
+    "typecheck:ui": "pnpm --dir packages/ui typecheck",
     "typecheck:web": "pnpm --dir apps/web typecheck"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-helpers": "^2.0.1",
+    "eslint-plugin-prettier": "5.2.2",
+    "prettier": "3.4.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.59.3"
   }
 }

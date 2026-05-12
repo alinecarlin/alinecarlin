@@ -1,0 +1,25 @@
+{
+  "name": "@alinecarlin/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint/base": "./eslint/base.mjs",
+    "./eslint/next": "./eslint/next.mjs",
+    "./eslint/react-library": "./eslint/react-library.mjs",
+    "./typescript/base": "./typescript/base.json",
+    "./typescript/next": "./typescript/next.json",
+    "./typescript/react-library": "./typescript/react-library.json"
+  },
+  "peerDependencies": {
+    "@eslint/js": ">=9",
+    "eslint": ">=9",
+    "eslint-config-next": ">=16",
+    "eslint-config-prettier": ">=10",
+    "eslint-plugin-import-helpers": ">=2",
+    "eslint-plugin-prettier": ">=5",
+    "prettier": ">=3",
+    "typescript": ">=5",
+    "typescript-eslint": ">=8"
+  }
+}
