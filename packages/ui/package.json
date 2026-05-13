@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css"
+  ],
   "imports": {
     "#components/*": "./src/components/*.tsx",
     "#hooks/*": "./src/hooks/*.ts",
-    "#lib/*": "./src/lib/*.ts"
+    "#lib/*": "./src/lib/*.ts",
+    "#styles/*": "./src/styles/*.css"
   },
   "scripts": {
     "lint": "eslint --fix",
@@ -16,9 +19,11 @@
   },
   "exports": {
     ".": "./src/index.ts",
+    "./components/*": "./src/components/*.tsx",
     "./components/ui/*": "./src/components/ui/*.tsx",
     "./icons": "./src/icons/index.ts",
-    "./lib/utils": "./src/lib/utils.ts"
+    "./lib/*": "./src/lib/*.ts",
+    "./styles/globals.css": "./src/styles/globals.css"
   },
   "peerDependencies": {
     "react": ">=19",

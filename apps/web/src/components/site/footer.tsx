@@ -1,8 +1,8 @@
 import logo from '@alinecarlin/assets/logo.svg'
+import { InstagramIcon } from '@alinecarlin/ui/icons'
 import { ArrowRight, Mail } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import type { SVGProps } from 'react'
 
 const nav = [
   { href: '/', label: 'Home' },
@@ -12,20 +12,10 @@ const nav = [
   { href: '/contato', label: 'Contato' }
 ] as const
 
-function InstagramIcon({ className = 'size-4', ...props }: SVGProps<SVGSVGElement>) {
-  return (
-    <svg aria-hidden="true" className={className} viewBox="0 0 24 24" fill="none" {...props}>
-      <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" strokeWidth="1.7" />
-      <circle cx="12" cy="12" r="3.5" stroke="currentColor" strokeWidth="1.7" />
-      <circle cx="16.8" cy="7.2" r="1" fill="currentColor" />
-    </svg>
-  )
-}
-
 export function Footer() {
   return (
     <footer className="mt-32 border-t border-border/60 bg-linear-to-b from-background to-muted/40">
-      <div className="container-px mx-auto max-w-7xl py-16">
+      <div className="container-page py-16">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="/" aria-label="Ir para a página inicial de Aline Carlin" className="mb-4 inline-flex w-fit">
@@ -43,7 +33,7 @@ export function Footer() {
               Navegação
             </h4>
 
-            <ul className="space-y-2 text-sm">
+            <ul className="flex flex-col gap-2 text-sm">
               {nav.map(item => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-muted-foreground transition-colors hover:text-foreground">
@@ -73,15 +63,15 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram de Aline Carlin"
-                className="flex size-10 items-center justify-center rounded-full border border-border transition-all hover:border-transparent hover:gradient-cta hover:text-white"
+                className="flex size-10 items-center justify-center rounded-full border border-border transition-all hover:border-transparent hover:text-white hover:[background:var(--gradient-brand)]"
               >
-                <InstagramIcon />
+                <InstagramIcon className="size-4" />
               </a>
 
               <Link
                 href="/contato"
                 aria-label="Contato por e-mail"
-                className="flex size-10 items-center justify-center rounded-full border border-border transition-all hover:border-transparent hover:gradient-cta hover:text-white"
+                className="flex size-10 items-center justify-center rounded-full border border-border transition-all hover:border-transparent hover:text-white hover:[background:var(--gradient-brand)]"
               >
                 <Mail className="size-4" />
               </Link>

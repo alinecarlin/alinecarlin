@@ -34,7 +34,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/75 backdrop-blur-xl">
-      <div className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
+      <div className="container-page flex h-20 items-center justify-between">
         <Link href="/" aria-label="Ir para a página inicial de Aline Carlin" className="flex items-center gap-2">
           <Image src={logo} alt="Aline Carlin" width={180} height={48} priority className="h-12 w-auto" />
         </Link>
@@ -57,7 +57,7 @@ export function Header() {
 
                 <span
                   className={cn(
-                    'gradient-brand absolute inset-x-0 -bottom-0.5 h-0.5 origin-left rounded-full transition-transform',
+                    'bg-gradient-brand absolute inset-x-0 -bottom-0.5 h-0.5 origin-left rounded-full transition-transform',
                     active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                   )}
                 />
@@ -69,7 +69,8 @@ export function Header() {
         <div className="hidden lg:block">
           <Button
             asChild
-            className="gradient-cta rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-soft transition-shadow hover:shadow-glow"
+            size="lg"
+            className="bg-gradient-brand rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-(--shadow-soft) transition-shadow hover:shadow-(--shadow-glow)"
           >
             <Link href="/contato">Falar com Aline</Link>
           </Button>
@@ -118,7 +119,7 @@ export function Header() {
                 })}
               </nav>
 
-              <div className="mt-6 rounded-3xl border border-border/70 bg-card/70 p-4 shadow-soft">
+              <div className="mt-6 rounded-3xl border border-border/70 bg-card/70 p-4 shadow-(--shadow-soft)">
                 <p className="text-sm font-medium text-foreground">
                   Presença, mídia criativa e comunicação visual estratégica.
                 </p>
@@ -130,7 +131,7 @@ export function Header() {
                 <SheetClose asChild>
                   <Button
                     asChild
-                    className="gradient-cta mt-5 w-full rounded-full text-white shadow-soft hover:shadow-glow"
+                    className="bg-gradient-brand mt-5 w-full rounded-full text-white shadow-(--shadow-soft) hover:shadow-(--shadow-glow)"
                   >
                     <Link href="/contato">Falar com Aline</Link>
                   </Button>

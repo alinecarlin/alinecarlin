@@ -1,5 +1,6 @@
 import './globals.css'
-
+import { Footer } from '@/components/site/footer'
+import { Header } from '@/components/site/header'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -53,7 +54,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

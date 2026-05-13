@@ -1,9 +1,7 @@
 import alineAvatarDark from '@alinecarlin/assets/aline-avatar-dark.png'
 import alineAvatarLight from '@alinecarlin/assets/aline-avatar-light.png'
-import logo from '@alinecarlin/assets/logo.svg'
 import { ArrowRight, Layers, Mail, Sparkles } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import type { ReactNode, SVGProps } from 'react'
 
 const CONTACT_EMAIL = 'contato@alinecarlin.com'
@@ -75,44 +73,6 @@ export default function Page() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_76%_18%,hsl(var(--brand-pink)/0.16),transparent_34%),radial-gradient(circle_at_18%_72%,hsl(var(--brand-cyan)/0.12),transparent_30%),linear-gradient(180deg,hsl(var(--background)),hsl(var(--surface-soft)))]"
       />
-
-      <header className="container-page flex items-center justify-between gap-6 py-6 lg:py-8">
-        <Link href="#top" aria-label="Aline Carlin" className="inline-flex shrink-0 items-center">
-          <Image
-            src={logo}
-            alt="Aline Carlin"
-            width={138}
-            height={68}
-            priority
-            className="h-auto w-28 sm:w-32 lg:w-36"
-          />
-        </Link>
-
-        <nav
-          aria-label="Navegação principal"
-          className="hidden items-center justify-center gap-8 text-sm font-medium text-foreground/70 lg:flex"
-        >
-          <a className="leading-none transition hover:text-foreground" href="#sobre">
-            Sobre
-          </a>
-          <a className="leading-none transition hover:text-foreground" href="#frentes">
-            Frentes
-          </a>
-          <a className="leading-none transition hover:text-foreground" href="#status">
-            Status
-          </a>
-          <a className="leading-none transition hover:text-foreground" href="#contato">
-            Contato
-          </a>
-        </nav>
-
-        <a
-          href={`mailto:${CONTACT_EMAIL}`}
-          className="hidden shrink-0 items-center justify-center rounded-full border border-border/80 bg-white/70 px-5 py-2.5 text-sm font-semibold leading-none text-foreground shadow-[0_10px_30px_-20px_hsl(var(--foreground)/0.25)] backdrop-blur transition hover:-translate-y-0.5 hover:border-primary/40 hover:bg-white sm:inline-flex"
-        >
-          Falar com Aline
-        </a>
-      </header>
 
       <section className="container-page grid min-h-[calc(100svh-104px)] items-center gap-12 pb-12 pt-4 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16 lg:pb-20 lg:pt-10">
         <div className="relative z-10 max-w-2xl animate-fade-up">
@@ -367,32 +327,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <footer className="container-page flex flex-col items-start gap-6 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-        <Image src={logo} alt="Aline Carlin" width={120} height={58} className="h-auto w-28 shrink-0" />
-
-        <p className="leading-6 sm:text-center">© {currentYear} Aline Carlin. Em construção.</p>
-
-        <div className="flex items-center gap-4 text-foreground/70">
-          <a
-            href="https://www.instagram.com/aline.carlin"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram"
-            className="inline-flex h-5 w-5 items-center justify-center transition hover:text-brand-pink"
-          >
-            <InstagramIcon className="h-5 w-5 shrink-0" />
-          </a>
-
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
-            aria-label="E-mail"
-            className="inline-flex h-5 w-5 items-center justify-center transition hover:text-brand-blue"
-          >
-            <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
-          </a>
-        </div>
-      </footer>
     </main>
   )
 }
