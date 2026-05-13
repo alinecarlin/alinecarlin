@@ -1,5 +1,5 @@
 import logo from '@alinecarlin/assets/logo.svg'
-import { InstagramIcon } from '@alinecarlin/ui/icons'
+import { InstagramIcon } from '@alinecarlin/ui'
 import { ArrowRight, Mail } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

@@ -1,16 +1,7 @@
 'use client'
 
 import logo from '@alinecarlin/assets/logo.svg'
-import { Button } from '@alinecarlin/ui/components/ui/button'
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger
-} from '@alinecarlin/ui/components/ui/sheet'
-import { cn } from '@alinecarlin/ui/lib/utils'
+import { Button, Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger, cn } from '@alinecarlin/ui'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
