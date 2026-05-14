@@ -123,7 +123,7 @@ export function StatusPage({
   variant = 'not-found',
   imageBackgroundPosition = 'center bottom',
   imageDesktopBackgroundPosition = 'right bottom',
-  imageBackgroundSize = 'contain',
+  imageBackgroundSize = 'clamp(34rem, 160vw, 64rem) auto',
   imageDesktopBackgroundSize = 'contain',
   imageClassName
 }: StatusPageProps) {
@@ -150,7 +150,7 @@ export function StatusPage({
         role="img"
         aria-label={imageAlt}
         className={cn(
-          'pointer-events-none absolute inset-x-0 bottom-0 z-1 h-[76svh] min-h-124 [background-image:var(--status-image)] bg-size-(--status-image-size) bg-position-(--status-image-position) bg-no-repeat drop-shadow-[0_32px_48px_hsl(var(--foreground)/0.16)] select-none sm:min-h-144 lg:inset-y-0 lg:h-auto lg:bg-size-(--status-image-size-lg) lg:bg-position-(--status-image-position-lg)',
+          'pointer-events-none absolute inset-x-0 bottom-0 z-1 h-dvh min-h-124 [background-image:var(--status-image)] bg-size-(--status-image-size) bg-position-(--status-image-position) bg-no-repeat drop-shadow-[0_32px_48px_hsl(var(--foreground)/0.16)] select-none sm:min-h-144 lg:inset-y-0 lg:h-auto lg:bg-size-(--status-image-size-lg) lg:bg-position-(--status-image-position-lg)',
           imageClassName
         )}
         style={imageBackgroundStyle}
@@ -173,7 +173,7 @@ export function StatusPage({
         </Link>
       </header>
 
-      <section className="container-page relative z-10 flex flex-1 items-center pt-10 pb-14 lg:pt-8 lg:pb-16">
+      <section className="container-page relative z-10 flex flex-1 items-start pt-[clamp(6rem,10vh,9rem)] pb-14 lg:items-center lg:pt-8 lg:pb-16">
         <div className="flex w-full max-w-xl flex-col items-start text-left">
           <p className="eyebrow">{eyebrow}</p>
 
