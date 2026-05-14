@@ -3,21 +3,27 @@
   "private": true,
   "packageManager": "pnpm@10.33.0",
   "scripts": {
-    "ui:add": "pnpm dlx shadcn@latest add -c packages/ui",
-
+    "dev": "turbo dev",
     "dev:web": "pnpm --dir apps/web dev",
 
+    "build": "turbo build",
     "build:web": "pnpm --dir apps/web build",
 
     "start:web": "pnpm --dir apps/web start",
 
+    "lint": "turbo lint",
     "lint:ui": "pnpm --dir packages/ui lint",
     "lint:web": "pnpm --dir apps/web lint",
+
+    "lint:check": "turbo lint:check",
     "lint:check:ui": "pnpm --dir packages/ui lint:check",
     "lint:check:web": "pnpm --dir apps/web lint:check",
-
+    
+    "typecheck": "turbo typecheck",
     "typecheck:ui": "pnpm --dir packages/ui typecheck",
-    "typecheck:web": "pnpm --dir apps/web typecheck"
+    "typecheck:web": "pnpm --dir apps/web typecheck",
+
+    "ui:add": "pnpm dlx shadcn@latest add -c packages/ui"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
@@ -28,6 +34,7 @@
     "eslint-plugin-prettier": "5.2.2",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.7.2",
+    "turbo": "^2.9.12",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.3"
   }

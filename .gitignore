@@ -15,6 +15,7 @@ pnpm-debug.log*
 # build
 dist
 .next
+.turbo
 coverage
 
 # OS
