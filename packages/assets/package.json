@@ -18,6 +18,10 @@
     "./aline-avatar-dark.webp": "./aline-avatar-dark.webp",
     "./aline-avatar-light.png": "./aline-avatar-light.png",
     "./aline-avatar-light.jpg": "./aline-avatar-light.jpg",
-    "./aline-avatar-light.webp": "./aline-avatar-light.webp"
+    "./aline-avatar-light.webp": "./aline-avatar-light.webp",
+    "./maintenance-bg.png": "./maintenance-bg.png",
+    "./not-found-bg.png": "./not-found-bg.png",
+    "./restricted-access-bg.png": "./restricted-access-bg.png",
+    "./server-error-bg.png": "./server-error-bg.png"
   }
 }

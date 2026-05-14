@@ -1,52 +1,80 @@
 import './globals.css'
-import { Footer } from '@/components/site/footer'
-import { Header } from '@/components/site/header'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Aline Carlin | Site em construção',
+    default: 'Aline Carlin | Mídia Criativa, Presença Digital e Comunicação',
     template: '%s | Aline Carlin'
   },
+
   description:
-    'O novo site pessoal de Aline Carlin está em construção. Arquitetura, conteúdo, imagem e presença digital em uma experiência premium.',
+    'Aline Carlin é criadora, comunicadora e profissional de mídia criativa, com atuação em presença digital, produção audiovisual, eventos, campanhas e arquitetura como repertório estético complementar.',
+
   applicationName: 'Aline Carlin',
+
   authors: [{ name: 'Aline Carlin' }],
+
   creator: 'Aline Carlin',
+
   publisher: 'Aline Carlin',
+
   keywords: [
     'Aline Carlin',
+    'mídia criativa',
+    'presença digital',
+    'comunicação digital',
+    'produção audiovisual',
+    'criadora de conteúdo',
+    'presença de marca',
+    'eventos',
+    'campanhas digitais',
+    'media kit',
+    'portfólio criativo',
     'arquitetura',
-    'portfólio de arquitetura',
-    'marca pessoal',
-    'influenciadora',
-    'modelo',
-    'conteúdo digital',
-    'Linnea'
+    'portfólio de arquitetura'
   ],
+
   metadataBase: new URL('https://alinecarlin.com'),
+
   alternates: {
     canonical: '/'
   },
+
   openGraph: {
-    title: 'Aline Carlin | Site em construção',
-    description: 'Arquitetura, conteúdo, imagem e presença digital em uma experiência premium.',
+    title: 'Aline Carlin | Mídia Criativa, Presença Digital e Comunicação',
+    description:
+      'Criadora e comunicadora com atuação em mídia criativa, produção audiovisual, eventos, campanhas digitais e arquitetura como repertório estético complementar.',
     url: '/',
     siteName: 'Aline Carlin',
     locale: 'pt_BR',
-    type: 'website'
+    type: 'website',
+    images: [
+      {
+        url: '/og-image.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Aline Carlin — Mídia Criativa, Presença Digital e Comunicação'
+      }
+    ]
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: 'Aline Carlin | Site em construção',
-    description: 'Arquitetura, conteúdo, imagem e presença digital em uma experiência premium.'
+    title: 'Aline Carlin | Mídia Criativa, Presença Digital e Comunicação',
+    description:
+      'Criadora e comunicadora com atuação em mídia criativa, produção audiovisual, eventos, campanhas digitais e presença de marca.',
+    images: ['/og-image.webp']
   },
+
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }
@@ -54,11 +82,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   )
 }
