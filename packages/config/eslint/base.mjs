@@ -20,7 +20,9 @@ const eslintConfig = [
           trailingComma: 'none',
           endOfLine: 'auto',
           printWidth: 120,
-          tabWidth: 2
+          tabWidth: 2,
+          plugins: ['prettier-plugin-tailwindcss'],
+          tailwindFunctions: ['cva', 'cn', 'clsx', 'classNames', 'cx', 'tv', 'twMerge']
         }
       ],
 

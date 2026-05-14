@@ -1,7 +1,21 @@
 'use client'
 
 import logo from '@alinecarlin/assets/logo.svg'
-import { Button, Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger, cn } from '@alinecarlin/ui'
+import {
+  Button,
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  cn
+} from '@alinecarlin/ui'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -24,7 +38,7 @@ export function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/75 backdrop-blur-xl">
+    <header className="border-border/60 bg-background/75 sticky top-0 z-50 border-b backdrop-blur-xl">
       <div className="container-page flex h-20 items-center justify-between">
         <Link href="/" aria-label="Ir para a página inicial de Aline Carlin" className="flex items-center gap-2">
           <Image src={logo} alt="Aline Carlin" width={180} height={48} priority className="h-12 w-auto" />
@@ -69,16 +83,16 @@ export function Header() {
 
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="-mr-2 lg:hidden" aria-label="Abrir menu">
-              <Menu className="size-6" />
+            <Button variant="ghost" size="icon-lg" className="cursor-pointer lg:hidden" aria-label="Abrir menu">
+              <Menu className="mt-[1] mr-[1] size-6" />
             </Button>
           </SheetTrigger>
 
           <SheetContent
             side="right"
-            className="w-[88vw] max-w-sm border-l border-border/70 bg-background/90 px-0 backdrop-blur-2xl"
+            className="border-border/70 bg-background/90 w-[88vw] max-w-sm border-l px-0 backdrop-blur-2xl"
           >
-            <SheetHeader className="border-b border-border/60 px-6 pb-5 text-left">
+            <SheetHeader className="border-border/60 border-b px-6 pb-5 text-left">
               <SheetTitle asChild>
                 <Link href="/" className="inline-flex w-fit items-center">
                   <Image src={logo} alt="Aline Carlin" width={180} height={48} className="h-12 w-auto" />
@@ -99,8 +113,8 @@ export function Header() {
                         className={cn(
                           'rounded-2xl px-4 py-3 text-base font-medium transition-colors',
                           active
-                            ? 'bg-accent text-foreground'
-                            : 'text-muted-foreground hover:bg-accent/70 hover:text-foreground'
+                            ? 'bg-brand-blue/20 text-foreground'
+                            : 'text-muted-foreground hover:bg-brand-blue/5 hover:text-foreground'
                         )}
                       >
                         {item.label}
@@ -110,24 +124,24 @@ export function Header() {
                 })}
               </nav>
 
-              <div className="mt-6 rounded-3xl border border-border/70 bg-card/70 p-4 shadow-(--shadow-soft)">
-                <p className="text-sm font-medium text-foreground">
-                  Presença, mídia criativa e comunicação visual estratégica.
-                </p>
-
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Media kit, campanhas, eventos, audiovisual e oportunidades comerciais.
-                </p>
-
-                <SheetClose asChild>
-                  <Button
-                    asChild
-                    className="bg-gradient-brand mt-5 w-full rounded-full text-white shadow-(--shadow-soft) hover:shadow-(--shadow-glow)"
-                  >
-                    <Link href="/contato">Falar com Aline</Link>
-                  </Button>
-                </SheetClose>
-              </div>
+              <Card className="mt-6">
+                <CardHeader>
+                  <CardTitle>Presença, mídia criativa e comunicação visual estratégica.</CardTitle>
+                  <CardDescription>
+                    Media kit, campanhas, eventos, audiovisual e oportunidades comerciais.
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                  <SheetClose asChild>
+                    <Button
+                      asChild
+                      className="bg-gradient-brand w-full rounded-full text-white shadow-(--shadow-soft) hover:shadow-(--shadow-glow)"
+                    >
+                      <Link href="/contato">Falar com Aline</Link>
+                    </Button>
+                  </SheetClose>
+                </CardFooter>
+              </Card>
             </div>
           </SheetContent>
         </Sheet>
