@@ -1,4 +1,5 @@
 import './globals.css'
+import { ReactQueryProvider } from '@/components/providers/react-query-provider'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -82,7 +83,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <ReactQueryProvider>{children}</ReactQueryProvider>
+      </body>
     </html>
   )
 }
