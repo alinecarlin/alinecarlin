@@ -13,7 +13,7 @@ export function HomeAction({ cta, className }: { cta: HomeCta; className?: strin
       size="lg"
       variant={isPrimary ? 'default' : 'outline'}
       className={cn(
-        'h-12 rounded-full px-6! text-sm font-semibold sm:h-13 sm:px-7!',
+        'h-12 w-full rounded-full px-6! text-sm font-semibold sm:h-13 sm:w-auto sm:px-7!',
         isPrimary
           ? 'bg-gradient-brand text-white shadow-(--shadow-soft) hover:shadow-(--shadow-glow)'
           : 'border-border/70 text-foreground hover:bg-muted bg-white/72 shadow-[0_14px_40px_-30px_hsl(var(--foreground)/0.36)] backdrop-blur',

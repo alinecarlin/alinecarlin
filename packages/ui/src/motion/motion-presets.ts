@@ -15,8 +15,14 @@ export const motionTransitions = {
 
 export const motionViewport = {
   once: true,
-  amount: 0.24,
+  amount: 0.16,
   margin: '0px 0px -10% 0px'
+} as const
+
+export const staggerViewport = {
+  once: true,
+  amount: 0.04,
+  margin: '0px 0px -6% 0px'
 } as const
 
 export const motionPresets = {

@@ -48,12 +48,6 @@ export type HomeStat = {
   label: string
 }
 
-export type HomeArchitectureNote = {
-  title: string
-  description: string
-  points: string[]
-}
-
 export type HomeMediaKitCta = {
   eyebrow: string
   title: string
@@ -68,6 +62,5 @@ export type HomeData = {
   presenceAreas: HomePresenceArea[]
   editorialCallouts: HomeEditorialCallout[]
   featuredItems: HomeFeaturedItem[]
-  architectureNote: HomeArchitectureNote
   mediaKitCta: HomeMediaKitCta
 }

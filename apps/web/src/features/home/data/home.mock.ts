@@ -5,17 +5,17 @@ import type { HomeData } from '../types/home.types'
 
 export const homeMock = {
   hero: {
-    eyebrow: 'Mídia criativa · Presença de marca · Audiovisual',
+    eyebrow: 'Comunicação · Imagem · Audiovisual',
     title: 'Aline Carlin',
     description:
-      'Comunicadora criativa, presença de marca e produtora audiovisual. Atuação em conteúdo digital, campanhas, eventos, entrevistas, produção audiovisual e projetos com presença visual estratégica.',
+      'Comunicação, imagem e produção audiovisual para marcas, eventos e projetos digitais. Presença em câmera, criação de conteúdo, entrevistas, campanhas e bastidores com estética, clareza e intenção.',
     image: {
       src: alineAvatarDark,
       alt: 'Retrato editorial de Aline Carlin com presença de câmera'
     },
     secondaryImage: {
       src: alineAvatarLight,
-      alt: 'Retrato claro de Aline Carlin para composição visual da Home'
+      alt: 'Retrato claro de Aline Carlin em composição editorial'
     },
     ctas: [
       {
@@ -35,88 +35,88 @@ export const homeMock = {
   stats: [
     {
       value: '01',
-      label: 'Presença para campanhas e marcas'
+      label: 'Campanhas e ativações'
     },
     {
       value: '02',
-      label: 'Conteúdo digital com estética e estratégia'
+      label: 'Entrevistas e eventos'
     },
     {
       value: '03',
-      label: 'Produção, bastidores e frente de câmera'
+      label: 'Bastidores e direção de conteúdo'
     }
   ],
   presenceAreas: [
     {
       title: 'Presença & Imagem',
-      description: 'Participação em campanhas, vídeos editoriais, ensaios comerciais e projetos com rosto de marca.',
+      description: 'Participação em campanhas, vídeos editoriais, fotos comerciais e ações com rosto de marca.',
       icon: 'image'
     },
     {
       title: 'Conteúdo & Redes',
-      description: 'Criação de narrativas para Instagram, LinkedIn, vídeos curtos, bastidores e experiências digitais.',
+      description: 'Roteiros curtos, reels, stories, bastidores e publicações com leitura estética e objetivo claro.',
       icon: 'network'
     },
     {
       title: 'Eventos & Comunicação',
-      description: 'Coberturas, entrevistas, ativações, recepção de marca e comunicação em ambientes ao vivo.',
+      description: 'Coberturas, entrevistas, ativações e presença em experiências presenciais ou híbridas.',
       icon: 'mic'
     },
     {
       title: 'Produção Audiovisual',
-      description: 'Planejamento, gravação, direção de presença, bastidores e execução visual para projetos de vídeo.',
+      description: 'Planejamento, gravação, bastidores e apoio criativo para vídeos comerciais e digitais.',
       icon: 'video'
     },
     {
       title: 'Mídia & iGaming',
-      description: 'Experiência em comunicação dinâmica, linguagem digital e formatos de alta retenção para mídia.',
+      description: 'Linguagem rápida, formatos de retenção e presença para projetos de entretenimento digital.',
       icon: 'gamepad'
     },
     {
-      title: 'Arquitetura como repertório visual',
-      description: 'Base estética e técnica que fortalece composição, leitura espacial, proporção e direção visual.',
+      title: 'Arquitetura',
+      description: 'Projetos de arquitetura organizados em uma área própria para apresentação e cadastro.',
       icon: 'layout'
     }
   ],
   editorialCallouts: [
     {
-      title: 'Frente às câmeras',
-      description: 'Presença segura, visual forte e comunicação direta para campanhas, entrevistas e conteúdos.',
+      title: 'Presença em câmera',
+      description: 'Postura, dicção e naturalidade para vídeos, entrevistas e participações comerciais.',
       image: {
         src: alineAvatarDark,
-        alt: 'Aline Carlin em retrato editorial para chamada frente às câmeras'
+        alt: 'Aline Carlin em retrato editorial para presença em câmera'
       }
     },
     {
       title: 'Bastidores e produção',
-      description: 'Atenção ao ritmo, estética, operação e narrativa antes, durante e depois da gravação.',
+      description: 'Registro de processo, rotina de gravação e narrativa visual antes da entrega final.',
       image: {
         src: alineAvatarLight,
         alt: 'Aline Carlin em imagem clara para chamada de bastidores e produção'
       }
     },
     {
-      title: 'Comunicação para marcas',
-      description: 'Imagem, linguagem e intenção alinhadas ao posicionamento comercial de cada projeto.',
+      title: 'Eventos e ativações',
+      description: 'Cobertura de experiências, entrevistas rápidas e presença alinhada ao ambiente da marca.',
       image: {
         src: alineAvatarDark,
-        alt: 'Aline Carlin em composição visual para comunicação de marcas'
+        alt: 'Aline Carlin em composição visual para eventos e ativações'
       }
     },
     {
-      title: 'Conteúdo com estética e estratégia',
-      description: 'Criatividade aplicada a formatos digitais, presença visual e percepção de valor.',
+      title: 'Conteúdo para marcas',
+      description: 'Peças sociais com intenção visual, mensagem direta e adequação ao canal de publicação.',
       image: {
         src: alineAvatarLight,
-        alt: 'Aline Carlin em composição visual para conteúdo estratégico'
+        alt: 'Aline Carlin em composição visual para conteúdo de marcas'
       }
     }
   ],
   featuredItems: [
     {
-      title: 'Campanha digital com presença editorial',
+      title: 'Campanhas digitais',
       category: 'Campanhas',
-      description: 'Formato para participação em vídeos, fotos, chamadas sociais e ativações com leitura de marca.',
+      description: 'Participação em vídeos, fotos, chamadas sociais e ativações com linguagem editorial.',
       image: {
         src: alineAvatarDark,
         alt: 'Retrato editorial de Aline Carlin para campanha digital'
@@ -124,38 +124,61 @@ export const homeMock = {
       href: '/media-kit'
     },
     {
-      title: 'Cobertura de experiência e bastidores',
-      category: 'Eventos',
-      description:
-        'Modelo de entrega para eventos, entrevistas, recepção de marca, stories, reels e registros de bastidor.',
+      title: 'Entrevistas e ativações',
+      category: 'Comunicação',
+      description: 'Condução em câmera, interação com convidados e presença em ações comerciais ao vivo.',
       image: {
         src: alineAvatarLight,
-        alt: 'Retrato claro de Aline Carlin para cobertura de experiência'
+        alt: 'Retrato claro de Aline Carlin para entrevistas e ativações'
       },
       href: '/media-kit'
     },
     {
-      title: 'Produção audiovisual para projetos digitais',
-      category: 'Audiovisual',
-      description:
-        'Atuação entre planejamento, presença em vídeo, direção visual e conteúdo com linguagem contemporânea.',
+      title: 'Cobertura de eventos',
+      category: 'Eventos',
+      description: 'Registro de momentos-chave, bastidores, presença social e conteúdo para pós-evento.',
       image: {
         src: alineAvatarDark,
-        alt: 'Retrato editorial de Aline Carlin para produção audiovisual'
+        alt: 'Retrato editorial de Aline Carlin para cobertura de eventos'
+      },
+      href: '/media-kit'
+    },
+    {
+      title: 'Bastidores e produção',
+      category: 'Produção',
+      description: 'Acompanhamento de gravações, making of, rotina criativa e materiais de apoio.',
+      image: {
+        src: alineAvatarLight,
+        alt: 'Retrato claro de Aline Carlin para bastidores e produção'
+      },
+      href: '/media-kit'
+    },
+    {
+      title: 'Conteúdo para marcas',
+      category: 'Redes',
+      description: 'Reels, stories e peças digitais com estética consistente e mensagem objetiva.',
+      image: {
+        src: alineAvatarDark,
+        alt: 'Retrato editorial de Aline Carlin para conteúdo de marcas'
+      },
+      href: '/media-kit'
+    },
+    {
+      title: 'Projetos audiovisuais',
+      category: 'Audiovisual',
+      description: 'Participação em vídeos, chamadas institucionais e produções digitais com direção visual.',
+      image: {
+        src: alineAvatarLight,
+        alt: 'Retrato claro de Aline Carlin para projetos audiovisuais'
       },
       href: '/media-kit'
     }
   ],
-  architectureNote: {
-    title: 'Arquitetura entra como repertório, não como rótulo principal.',
-    description:
-      'A formação amplia o olhar para composição, luz, espaço, estética e organização visual. Na Home, esse repertório sustenta a comunicação criativa sem competir com mídia, presença e audiovisual.',
-    points: ['Composição visual', 'Leitura espacial', 'Direção estética', 'Clareza de apresentação']
-  },
   mediaKitCta: {
-    eyebrow: 'Media Kit',
-    title: 'Formatos comerciais, presença e possibilidades em um só lugar.',
-    description: 'Conheça formatos de participação, experiências e possibilidades comerciais no Media Kit.',
+    eyebrow: 'Comercial',
+    title: 'Media Kit',
+    description:
+      'Veja formatos de colaboração, experiências, presença digital e possibilidades comerciais para campanhas, eventos e projetos de mídia.',
     cta: {
       label: 'Acessar Media Kit',
       href: '/media-kit',

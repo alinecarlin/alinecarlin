@@ -5,10 +5,10 @@ import { HomeAction } from './home-action'
 
 export function HomeMediaKitCtaSection({ mediaKitCta }: { mediaKitCta: HomeMediaKitCta }) {
   return (
-    <section className="container-page pb-20 lg:pb-28">
+    <section className="container-page pb-18 sm:pb-20 lg:pb-28">
       <Reveal
         variants={motionPresets.blurReveal}
-        className="bg-foreground relative overflow-hidden rounded-[2rem] p-7 text-white shadow-[0_38px_120px_-72px_hsl(var(--foreground)/0.72)] md:p-10 lg:p-14"
+        className="bg-foreground relative overflow-hidden rounded-[1.5rem] p-6 text-white shadow-[0_38px_120px_-72px_hsl(var(--foreground)/0.72)] sm:rounded-[2rem] md:p-10 lg:p-14"
       >
         <div
           aria-hidden="true"
@@ -22,7 +22,7 @@ export function HomeMediaKitCtaSection({ mediaKitCta }: { mediaKitCta: HomeMedia
         <div className="relative z-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold tracking-[0.22em] text-white/70 uppercase">{mediaKitCta.eyebrow}</p>
-            <h2 className="mt-5 text-4xl leading-tight sm:text-5xl lg:text-6xl">{mediaKitCta.title}</h2>
+            <h2 className="mt-5 text-3xl leading-tight sm:text-5xl lg:text-6xl">{mediaKitCta.title}</h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/76">{mediaKitCta.description}</p>
           </div>
 

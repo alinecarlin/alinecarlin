@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion, type HTMLMotionProps, type Variants } from 'framer-motion'
 
-import { motionPresets, motionViewport } from './motion-presets'
+import { motionPresets, motionViewport, staggerViewport } from './motion-presets'
 
 export type RevealProps = HTMLMotionProps<'div'> & {
   variants?: Variants
@@ -32,7 +32,7 @@ export function StaggerReveal({ variants = motionPresets.staggerContainer, ...pr
     <motion.div
       initial={shouldReduceMotion ? false : 'hidden'}
       whileInView={shouldReduceMotion ? undefined : 'visible'}
-      viewport={motionViewport}
+      viewport={staggerViewport}
       variants={shouldReduceMotion ? undefined : variants}
       {...props}
     />

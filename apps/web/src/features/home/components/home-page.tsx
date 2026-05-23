@@ -2,7 +2,6 @@
 
 import { useHomeData } from '../hooks/use-home-data'
 import type { HomeData } from '../types/home.types'
-import { HomeArchitectureNoteSection } from './home-architecture-note'
 import { HomeFeaturedWork } from './home-featured-work'
 import { HomeHero } from './home-hero'
 import { HomeMediaKitCtaSection } from './home-media-kit-cta'
@@ -25,9 +24,8 @@ export function HomePage({ initialData }: { initialData: HomeData }) {
 
       <HomeHero hero={data.hero} stats={data.stats} />
       <HomePresenceAreas areas={data.presenceAreas} />
-      <HomeVisualMosaic callouts={data.editorialCallouts} />
       <HomeFeaturedWork items={data.featuredItems} />
-      <HomeArchitectureNoteSection note={data.architectureNote} />
+      <HomeVisualMosaic callouts={data.editorialCallouts} />
       <HomeMediaKitCtaSection mediaKitCta={data.mediaKitCta} />
     </main>
   )
