@@ -74,7 +74,7 @@ export const homeMock = {
     },
     {
       title: 'Arquitetura',
-      description: 'Projetos de arquitetura organizados em uma área própria para apresentação e cadastro.',
+      description: 'Projetos autorais com organização, desenho técnico e leitura visual cuidadosa.',
       icon: 'layout'
     }
   ],

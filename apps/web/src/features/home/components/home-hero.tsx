@@ -1,4 +1,4 @@
-import { Reveal, motionPresets } from '@alinecarlin/ui'
+import { Reveal, VisualFrame, motionPresets } from '@alinecarlin/ui'
 import Image from 'next/image'
 
 import type { HomeHero, HomeStat } from '../types/home.types'
@@ -59,7 +59,10 @@ export function HomeHero({ hero, stats }: { hero: HomeHero; stats: HomeStat[] })
             className="absolute -top-3 left-7 h-[44%] w-[52%] rounded-[2rem] bg-[linear-gradient(135deg,hsl(var(--brand-orange)/0.12),hsl(var(--brand-pink)/0.06)_64%,transparent_100%)] sm:-top-6 sm:left-12 sm:h-[48%] sm:w-[48%] sm:rounded-[2.75rem]"
           />
 
-          <div className="border-border/60 bg-foreground absolute top-0 right-0 left-8 h-[80%] overflow-hidden rounded-[1.75rem] border shadow-[0_36px_110px_-80px_hsl(var(--foreground)/0.7)] sm:left-20 sm:h-[82%] sm:rounded-[2.25rem]">
+          <VisualFrame
+            className="border-border/60 bg-foreground absolute top-0 right-0 left-8 h-[80%] rounded-[1.75rem] border shadow-[0_36px_110px_-80px_hsl(var(--foreground)/0.7)] sm:left-20 sm:h-[82%] sm:rounded-[2.25rem]"
+            contentClassName="size-full overflow-hidden"
+          >
             <Image
               src={hero.image.src}
               alt={hero.image.alt}
@@ -69,7 +72,7 @@ export function HomeHero({ hero, stats }: { hero: HomeHero; stats: HomeStat[] })
               sizes="(min-width: 1024px) 48vw, 88vw"
               className="size-full object-cover object-center"
             />
-          </div>
+          </VisualFrame>
 
           <div className="border-border/60 relative z-10 mb-3 ml-0 w-[44%] overflow-hidden rounded-[1.25rem] border bg-white shadow-[0_24px_80px_-58px_hsl(var(--brand-purple)/0.5)] sm:mb-4 sm:ml-1 sm:w-[38%] sm:rounded-[1.75rem]">
             <Image

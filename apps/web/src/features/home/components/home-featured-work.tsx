@@ -1,6 +1,5 @@
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -43,27 +42,25 @@ export function HomeFeaturedWork({ items }: { items: HomeFeaturedItem[] }) {
                     sizes="(min-width: 1024px) 30vw, 90vw"
                     className="size-full object-cover object-center"
                   />
-                  <div className="absolute top-4 left-4 rounded-full border border-white/30 bg-white/18 px-3 py-1 text-xs font-semibold tracking-[0.16em] text-white uppercase backdrop-blur">
-                    {item.category}
-                  </div>
                 </div>
-                <CardHeader className="px-6 pt-6">
+                <CardHeader className="flex-1 px-6 pt-6">
                   <CardTitle className="font-serif text-[1.45rem] leading-tight sm:text-2xl">{item.title}</CardTitle>
                   <CardDescription className="text-sm leading-7">{item.description}</CardDescription>
                 </CardHeader>
-                {item.href ? (
-                  <CardFooter className="border-border/60 bg-muted/36 px-6 py-5">
+                <CardFooter className="border-border/60 bg-muted/36 mt-auto flex items-center justify-between gap-4 px-6 py-5">
+                  <span className="text-primary text-xs font-semibold tracking-[0.18em] uppercase">
+                    {item.category}
+                  </span>
+                  {item.href ? (
                     <Link
                       href={item.href}
-                      className="text-primary inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3"
+                      className="text-primary inline-flex shrink-0 items-center gap-2 text-sm font-semibold transition-all hover:gap-3"
                     >
-                      <span>Ver possibilidades</span>
+                      <span>Ver</span>
                       <ArrowRight className="size-4" aria-hidden="true" />
                     </Link>
-                  </CardFooter>
-                ) : (
-                  <CardContent className="pb-6" />
-                )}
+                  ) : null}
+                </CardFooter>
               </Card>
             </motion.div>
           ))}
