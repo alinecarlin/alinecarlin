@@ -57,12 +57,6 @@ export type MediaKitCase = {
   image: MediaKitImage
 }
 
-export type MediaKitTestimonial = {
-  quote: string
-  author: string
-  role: string
-}
-
 export type MediaKitFinalCta = {
   title: string
   description: string
@@ -77,6 +71,5 @@ export type MediaKitData = {
   igamingExperience: MediaKitIgamingExperience
   metrics: MediaKitMetric[]
   cases: MediaKitCase[]
-  testimonials: MediaKitTestimonial[]
   finalCta: MediaKitFinalCta
 }

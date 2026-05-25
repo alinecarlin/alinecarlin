@@ -33,14 +33,18 @@ export function HomeHero({ hero, stats }: { hero: HomeHero; stats: HomeStat[] })
         </Reveal>
 
         <Reveal delay={0.16}>
-          <div className="border-border/70 mt-10 grid overflow-hidden rounded-3xl border bg-white/64 shadow-[0_24px_80px_-58px_hsl(var(--foreground)/0.38)] backdrop-blur sm:mt-12 md:grid-cols-3">
+          <div className="border-border/70 mt-8 grid w-full grid-cols-3 gap-1.5 rounded-2xl border bg-white/64 p-1.5 shadow-[0_18px_70px_-58px_hsl(var(--foreground)/0.38)] backdrop-blur sm:mt-10 sm:max-w-xl sm:gap-2 sm:rounded-3xl sm:p-2">
             {stats.map(stat => (
               <div
                 key={stat.value}
-                className="border-border/70 flex min-h-24 flex-col justify-between gap-4 border-b p-5 last:border-b-0 sm:min-h-28 md:border-r md:border-b-0 md:last:border-r-0"
+                className="flex min-h-19 flex-col justify-between rounded-[1rem] bg-white/64 p-3 sm:min-h-24 sm:rounded-[1.25rem] sm:p-4"
               >
-                <span className="text-gradient-brand font-serif text-3xl leading-none italic">{stat.value}</span>
-                <span className="text-foreground/72 text-sm leading-5 font-medium">{stat.label}</span>
+                <span className="text-gradient-brand font-serif text-xl leading-none italic sm:text-3xl">
+                  {stat.value}
+                </span>
+                <span className="text-foreground/72 text-[0.68rem] leading-4 font-semibold sm:text-sm sm:leading-5">
+                  {stat.label}
+                </span>
               </div>
             ))}
           </div>

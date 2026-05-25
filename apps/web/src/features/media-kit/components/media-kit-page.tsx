@@ -10,7 +10,6 @@ import { MediaKitIgamingExperienceSection } from './media-kit-igaming-experience
 import { MediaKitMetrics } from './media-kit-metrics'
 import { MediaKitProfile } from './media-kit-profile'
 import { MediaKitServices } from './media-kit-services'
-import { MediaKitTestimonials } from './media-kit-testimonials'
 
 export function MediaKitPage({ initialData }: { initialData: MediaKitData }) {
   const { data } = useMediaKitData(initialData)
@@ -33,7 +32,6 @@ export function MediaKitPage({ initialData }: { initialData: MediaKitData }) {
       <MediaKitCollaborationFormats formats={data.collaborationFormats} />
       <MediaKitIgamingExperienceSection experience={data.igamingExperience} />
       <MediaKitCases cases={data.cases} />
-      <MediaKitTestimonials testimonials={data.testimonials} />
       <MediaKitFinalCta finalCta={data.finalCta} />
     </main>
   )

@@ -72,7 +72,7 @@ export const mediaKitMock = {
       description: 'Presença em peças de vídeo, fotos editoriais, chamadas sociais e ativações de marca.'
     },
     {
-      title: 'Conteúdos para Instagram, TikTok e LinkedIn',
+      title: 'Conteúdos para Instagram, TikTok e YouTube',
       description: 'Conteúdos adaptados ao canal, com linguagem direta e estética consistente.'
     },
     {
@@ -90,10 +90,6 @@ export const mediaKitMock = {
     {
       title: 'Participação em vídeos institucionais',
       description: 'Imagem profissional para vídeos de marca, chamadas internas e apresentações digitais.'
-    },
-    {
-      title: 'Bastidores de marca',
-      description: 'Registro de processo, rotina e construção de narrativa visual para campanhas.'
     },
     {
       title: 'Produção de conteúdo audiovisual',
@@ -114,31 +110,31 @@ export const mediaKitMock = {
     {
       label: 'Instagram',
       value: '870K+',
-      description: 'seguidores',
+      description: 'Seguidores',
       icon: 'instagram'
     },
     {
       label: 'TikTok',
       value: '1.5M+',
-      description: 'seguidores',
+      description: 'Seguidores',
       icon: 'tiktok'
     },
     {
       label: 'YouTube',
       value: '420K+',
-      description: 'inscritos',
+      description: 'Inscritos',
       icon: 'youtube'
     },
     {
       label: 'Alcance mensal',
       value: '8M+',
-      description: 'contas alcançadas',
+      description: 'Contas alcançadas / mês',
       icon: 'reach'
     },
     {
       label: 'Engajamento médio',
       value: '9.6%',
-      description: 'interações qualificadas',
+      description: 'Engajamento médio',
       icon: 'engagement'
     }
   ],
@@ -178,20 +174,6 @@ export const mediaKitMock = {
         src: alineAvatarDark,
         alt: 'Aline Carlin em retrato editorial para produção audiovisual'
       }
-    }
-  ],
-  testimonials: [
-    {
-      quote:
-        'Aline trouxe segurança para a câmera e uma leitura muito rápida do ambiente. A entrega ficou elegante, objetiva e pronta para redes.',
-      author: 'Produção de evento',
-      role: 'Ativação de marca'
-    },
-    {
-      quote:
-        'A presença dela ajudou o conteúdo a ganhar ritmo e clareza. Funcionou bem tanto nos bastidores quanto nas chamadas principais.',
-      author: 'Equipe de campanha',
-      role: 'Conteúdo digital'
     }
   ],
   finalCta: {

@@ -35,15 +35,15 @@ export const homeMock = {
   stats: [
     {
       value: '01',
-      label: 'Campanhas e ativações'
+      label: 'Campanhas'
     },
     {
       value: '02',
-      label: 'Entrevistas e eventos'
+      label: 'Eventos'
     },
     {
       value: '03',
-      label: 'Bastidores e direção de conteúdo'
+      label: 'Bastidores'
     }
   ],
   presenceAreas: [

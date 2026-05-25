@@ -33,15 +33,14 @@ export function MediaKitHero({ hero }: { hero: MediaKitHero }) {
         </Reveal>
 
         <Reveal delay={0.16}>
-          <div className="border-border/70 mt-10 grid gap-0 overflow-hidden rounded-3xl border bg-white/64 shadow-[0_24px_80px_-58px_hsl(var(--foreground)/0.38)] backdrop-blur sm:mt-12 sm:grid-cols-3">
-            {['Campanhas', 'Eventos', 'Vídeo'].map(item => (
-              <div
+          <div className="border-border/70 mt-8 flex flex-wrap gap-2 rounded-full border bg-white/58 p-2 shadow-[0_18px_70px_-58px_hsl(var(--foreground)/0.38)] backdrop-blur sm:mt-10 sm:w-fit">
+            {['Campanhas digitais', 'Eventos', 'Vídeo'].map(item => (
+              <span
                 key={item}
-                className="border-border/70 border-b p-5 last:border-b-0 sm:border-r sm:border-b-0 sm:last:border-r-0"
+                className="text-foreground/72 rounded-full bg-white/72 px-3 py-2 text-xs leading-none font-semibold sm:px-4"
               >
-                <p className="text-gradient-brand font-serif text-3xl leading-none italic">•</p>
-                <p className="text-foreground/72 mt-4 text-sm leading-5 font-medium">{item}</p>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
         </Reveal>
