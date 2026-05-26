@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Next Web App"
+  short_description: "Scaffold Next apps like apps/web"
+  default_prompt: "Use $create-next-web-app to create a new Next app following the apps/web monorepo pattern."

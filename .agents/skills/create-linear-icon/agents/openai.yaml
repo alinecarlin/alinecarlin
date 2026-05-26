@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Linear Icon"
+  short_description: "Create minimal technical SVG icons"
+  default_prompt: "Use $create-linear-icon to create a minimal linear SVG icon component."

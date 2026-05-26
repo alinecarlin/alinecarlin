@@ -1,0 +1,4 @@
+interface:
+  display_name: "Distinctive Frontend"
+  short_description: "Design polished frontend interfaces"
+  default_prompt: "Use $distinctive-frontend to build a distinctive production-grade frontend interface."
