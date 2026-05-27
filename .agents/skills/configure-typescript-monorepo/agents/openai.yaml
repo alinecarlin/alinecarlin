@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configure TypeScript Monorepo"
+  short_description: "Add shared TypeScript config"
+  default_prompt: "Use $configure-typescript-monorepo to add shared TypeScript configuration to a pnpm monorepo."

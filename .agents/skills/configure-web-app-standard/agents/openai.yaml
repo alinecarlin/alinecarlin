@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configure Web App Standard"
+  short_description: "Set React web app standards"
+  default_prompt: "Use $configure-web-app-standard to structure a React web app with shared UI and shadcn conventions."

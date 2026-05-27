@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Next Web Project"
+  short_description: "Create a Next web app in monorepo"
+  default_prompt: "Use $create-next-web-project to create a new Next web app in a pnpm monorepo."

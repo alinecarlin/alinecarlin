@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Maintenance Comments"
+  short_description: "Explain code intent and decisions"
+  default_prompt: "Use $add-maintenance-comments to add clear maintenance comments to code."

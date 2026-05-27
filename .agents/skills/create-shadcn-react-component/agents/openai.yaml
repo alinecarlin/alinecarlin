@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Shadcn React Component"
+  short_description: "Build React components from shadcn"
+  default_prompt: "Use $create-shadcn-react-component to create a React component using shadcn/ui first."

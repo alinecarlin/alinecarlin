@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Shared Contract Schemas"
+  short_description: "Share backend/frontend schemas"
+  default_prompt: "Use $create-shared-contract-schemas to create shared schemas for data exchanged between backend and frontend."

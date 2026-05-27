@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configure ESLint Monorepo"
+  short_description: "Add shared ESLint flat config"
+  default_prompt: "Use $configure-eslint-monorepo to add shared ESLint Flat Config to a pnpm monorepo."

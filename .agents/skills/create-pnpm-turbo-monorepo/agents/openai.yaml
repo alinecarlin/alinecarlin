@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create PNPM Turbo Monorepo"
+  short_description: "Create a JS pnpm/turbo base"
+  default_prompt: "Use $create-pnpm-turbo-monorepo to create a new pnpm and Turborepo monorepo base."

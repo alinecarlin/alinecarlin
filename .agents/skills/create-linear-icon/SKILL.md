@@ -1,6 +1,6 @@
 ---
 name: create-linear-icon
-description: Create or edit React TypeScript SVG icon components in a linear, minimal, technical style with thin uniform strokes, lightly rounded corners, no fill by default, native SVG props, forwardRef, children support, and overridable props for each meaningful visual part. Use when Codex is asked to design, implement, convert, refactor, or add a code-based icon component, independent of the destination folder or project-specific file naming conventions.
+description: Create or edit React TypeScript SVG icon components in a linear, minimal, technical style with thin uniform strokes, lightly rounded corners, no fill by default, native SVG props, forwardRef, children support, and overridable props for each meaningful visual part. Use when asked to design, implement, convert, refactor, or add a code-based icon component, independent of the destination folder or project-specific file naming conventions.
 ---
 
 # Create Linear Icon

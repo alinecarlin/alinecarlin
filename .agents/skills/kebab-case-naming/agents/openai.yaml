@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kebab Case Naming"
+  short_description: "Standardize files and folders"
+  default_prompt: "Use $kebab-case-naming to standardize file and folder names as kebab-case."
